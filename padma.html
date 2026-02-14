@@ -1,0 +1,131 @@
+
+to me
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine's Day Guhan ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ff4e8a, #ff9a9e);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #ff4e8a;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4e8a;
+            color: white;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 25px;
+            animation: float 6s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Happy Valentine's Day ❤️</h1>
+    <h2>My hus Guhan💕</h2>
+    <p>You are my today and all of my tomorrows and forever.</p>
+    <p>I am so lucky to have you in my life.</p>
+    <p>SRY FOR EVERYTHING BAE❤️.</p>
+
+ 
+    <button onclick="surprise()">💝 Surprise Message</button><br>
+    <button onclick="playMusic()">🎵 Play Our Song</button>
+</div>
+
+<!-- Audio File -->
+<audio controls>
+  <source src="usuraiya-tholaichaen.mp3" type="audio/mpeg">
+  <source src="usuraiya-tholaichaen.ogg" type="audio/ogg">
+  <p>Download the <a href="usuraiya-tholaichaen.mp3">MP3 file</a> instead.</p>
+</audio>
+
+
+<script>
+    function surprise() {
+        alert("Guhan ❤️ You are my forever love! Happy Valentine's Day 💕");
+    }
+
+    function playMusic() {
+        var music = document.getElementById("bgMusic");
+        music.play();
+    }
+
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+
+    setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
