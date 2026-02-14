@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Husband Guhan ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 50px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        button {
+            background: white;
+            color: #ff4b6e;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #ffe6ec;
+        }
+        a {
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .heart {
+            font-size: 40px;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>Happy Valentine's Day My Love 💖</h1>
+        <p>To My Dearest Husband, <b>Guhan</b> ❤️</p>
+        <p>You are my heart, my happiness, and my forever.</p>
+        <p>I am so lucky to have you in my life. 💕</p>
+        <p>sry for everything my bae I want be with you forever24\7. 💕</p>
+
+        <p>🎵 Our Special Song:</p>
+        <a href=https://open.spotify.com/track/12D1SCxBRDjbROUa5GQkf1?si=7rrh6e2qTWaqjqBtCmPOSA target="_blank">
+            Usuraiya Tholaichaen
+        </a>
+
+        <br>
+
+        <button onclick="shareMessage()">Share This Love ❤️</button>
+    </div>
+
+    <script>
+        function shareMessage() {
+            var message = "Happy Valentine's Day My Love ❤️ Listen to our special song Usuraiya Tholaichaen 💕 https://youtu.be/1kz6h7jV6pA";
+            var whatsappURL = "https://wa.me/?text=" + encodeURIComponent(message);
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+
+</body>
+</html>
